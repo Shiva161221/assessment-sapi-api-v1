@@ -1,0 +1,50 @@
+#%RAML 1.0
+title: assessement-sapi-raml
+description: this Raml is for assessement sapi API.
+version: 1.0.0
+protocols:
+  - HTTPS 
+  - HTTP
+
+uses:
+  common-lib :  /exchange_modules/7a84717a-f04b-4d65-a558-e84d16a3aa05/common-fragment/2.0.10/common-library-fragment.raml
+
+             
+/assessements:             
+ description: This resource is used for assessment check fund eligibality and submit fund eligibality assessement.
+ get:
+  is: 
+    - common-lib.Common-headers
+    - common-lib.common-error-response
+  description: "This API will  retrieve set of questions answer from salesforce system."
+  responses:
+    200:
+      body:
+        application/json:
+          type: common-lib.get-assessment-response
+          example: !include /example/get-assessment-response-example.json
+ post:
+    description: "This API wil submit assessment report tosalesforce system"
+    is:
+      - common-lib.Common-headers
+      - common-lib.common-error-response
+    body:
+      application/json:
+        type: common-lib.post-assessment-request
+        example: !include /example/poast-assessment-request-example.json
+    responses:
+      201:
+        body:
+         application/json:
+            type: common-lib.post-assessment-response      
+            example:  !include /example/poast-assessment-response-example.json
+
+
+              
+                
+                
+
+                    
+                    
+                
+          

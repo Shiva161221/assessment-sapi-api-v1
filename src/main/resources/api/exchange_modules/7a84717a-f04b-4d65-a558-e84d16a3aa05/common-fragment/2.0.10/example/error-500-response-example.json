@@ -1,0 +1,10 @@
+{
+  "msg": "failed operation",
+  "code": 500,
+  "eventId": "dbfhjsdb-hfbdo8ryt-876t7-5ty",
+  "error": {
+    "type": "SERVER_ERROR",
+    "title": "Internal server error",
+    "details": "The server encountered an unexpected condtion which prevented it from fulfilling the request"
+  }
+}
