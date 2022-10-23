@@ -3,7 +3,6 @@
 <mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
-	<error-handler name="common-flowError_Handler" doc:id="c2bfced5-4154-44e0-9115-5aed59c047fb" />
 	<flow name="common-flowFlow" doc:id="1170bdc0-034b-4397-8c68-1487b11fe97e" >
 		<logger level="INFO" doc:name="Logger" doc:id="56464814-55a4-40e0-901b-b589433cf336" />
 	</flow>
